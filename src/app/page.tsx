@@ -5,7 +5,9 @@ import { ArrowRight, ShieldCheck, Clock, Truck, Phone, Mail, MapPin } from "luci
 import Image from "next/image";
 import Link from "next/link";
 
-import LogoModified from "@/components/LogoModified";
+
+
+import Navbar from "@/components/Navbar";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -23,33 +25,9 @@ const staggerContainer: Variants = {
 };
 
 export default function Home() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <main className="min-h-screen bg-stark text-onyx font-sans overflow-hidden">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-stark/80 backdrop-blur-md border-b border-onyx/5 px-6 py-4 flex items-center justify-between">
-        <div 
-          className="flex items-center gap-3 cursor-pointer group"
-          onClick={scrollToTop}
-        >
-          {/* We use the modified logo provided by the user */}
-          <div className="flex items-center justify-start group-hover:scale-105 transition-transform">
-             <LogoModified className="h-12 w-auto max-w-none origin-left" />
-          </div>
-          <span className="font-heading font-bold text-xl tracking-wide hidden sm:block">RAZ TRANSPORTATION</span>
-        </div>
-        <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-onyx/80">
-          <Link href="#about" className="hover:text-gold-dark transition-colors font-medium">About</Link>
-          <Link href="#services" className="hover:text-gold-dark transition-colors font-medium">Services</Link>
-          <Link href="#contact" className="hover:text-gold-dark transition-colors font-medium">Contact</Link>
-        </div>
-        <Link href="#contact" className="px-5 py-2 gold-gradient-bg rounded-none text-sm uppercase tracking-widest text-stark font-bold hover:shadow-lg hover:shadow-gold-light/20 transition-all">
-          Get a Quote
-        </Link>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center pt-20 px-6 bg-[#FAFAFA]">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Terms of Service | RAZ Transportation LLC",
@@ -9,14 +10,13 @@ export const metadata = {
 export default function TermsOfService() {
   return (
     <main className="min-h-screen bg-stark text-onyx font-sans">
-      {/* Simple Header */}
-      <nav className="w-full bg-stark/80 backdrop-blur-md border-b border-onyx/5 px-6 py-4 flex items-center">
-        <Link href="/" className="flex items-center gap-2 text-sm uppercase tracking-widest text-onyx/70 hover:text-gold-dark transition-colors font-bold">
+      <Navbar />
+
+      <article className="max-w-4xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-32">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-onyx/60 hover:text-gold-dark transition-colors font-bold mb-12">
           <ArrowLeft size={16} /> Back to Home
         </Link>
-      </nav>
 
-      <article className="max-w-4xl mx-auto px-6 py-20 md:py-32">
         <div className="mb-16">
           <p className="text-gold-dark uppercase tracking-[0.2em] text-sm font-bold mb-4">Legal</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">Terms of Service</h1>
