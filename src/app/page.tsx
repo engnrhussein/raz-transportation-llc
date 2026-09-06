@@ -4,10 +4,8 @@ import { motion, Variants } from "framer-motion";
 import { ArrowRight, ShieldCheck, Clock, Truck, Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-
-
 import Navbar from "@/components/Navbar";
+import FleetSlideshow from "@/components/FleetSlideshow";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -116,72 +114,29 @@ export default function Home() {
       <section id="services" className="py-16 lg:py-20 px-6 bg-stark relative">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8"
+            className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
             <div>
-              <p className="text-gold-dark uppercase tracking-widest text-sm mb-4 font-bold">What We Do</p>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-onyx">Premium Services</h2>
+              <p className="text-gold-dark uppercase tracking-widest text-sm mb-4 font-bold">Our Fleet</p>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-onyx">Uncompromising Capacity</h2>
             </div>
             <Link href="#contact" className="text-sm uppercase tracking-widest text-onyx hover:text-gold-dark transition-colors flex items-center gap-2 pb-2 border-b border-onyx/20 hover:border-gold-dark font-bold">
-              View All Capabilities <ArrowRight size={16} />
+              Dispatch a Truck <ArrowRight size={16} />
             </Link>
           </motion.div>
 
-          {/* Bento Box Layout */}
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          {/* Fleet Slideshow */}
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
+            variants={fadeInUp}
           >
-            {/* Main Service - Keeping the dark overlay for premium contrast on images */}
-            <motion.div variants={fadeInUp} className="md:col-span-2 lg:col-span-2 relative group overflow-hidden bg-onyx h-[400px] shadow-sm">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2075&auto=format&fit=crop')] bg-cover bg-center opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/60 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-10 w-full text-stark">
-                <h3 className="font-heading text-3xl font-bold mb-3 group-hover:text-gold-light transition-colors">Full Truckload (FTL)</h3>
-                <p className="text-stark/80 max-w-md font-light">Dedicated capacity for your largest shipments. Direct, secure, and fast.</p>
-              </div>
-            </motion.div>
-
-            {/* Secondary Service 1 */}
-            <motion.div variants={fadeInUp} className="relative group overflow-hidden bg-onyx h-[400px] shadow-sm">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8ed7c1590f?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/60 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-8 w-full text-stark">
-                <h3 className="font-heading text-2xl font-bold mb-3 group-hover:text-gold-light transition-colors">Expedited Shipping</h3>
-                <p className="text-stark/80 font-light">When tomorrow is too late. Time-critical freight delivered on schedule.</p>
-              </div>
-            </motion.div>
-
-            {/* Secondary Service 2 */}
-            <motion.div variants={fadeInUp} className="relative group overflow-hidden border border-onyx/10 bg-white h-[300px] shadow-sm hover:shadow-xl hover:shadow-black/5 transition-all">
-              <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
-                <div className="w-16 h-16 rounded-full border border-gold-dark flex items-center justify-center mb-6 group-hover:bg-gold-light/10 transition-colors">
-                  <ShieldCheck size={28} className="text-gold-dark" />
-                </div>
-                <h3 className="font-heading text-xl font-bold mb-3 text-onyx">High-Value Cargo</h3>
-                <p className="text-onyx/70 text-sm font-medium">Enhanced security protocols for sensitive freight.</p>
-              </div>
-            </motion.div>
-
-            {/* Secondary Service 3 */}
-            <motion.div variants={fadeInUp} className="md:col-span-2 relative group overflow-hidden border border-gold-dark/20 bg-gradient-to-br from-[#FAFAFA] to-white h-[300px] flex items-center p-10 shadow-sm hover:shadow-xl hover:shadow-gold-dark/5 transition-all">
-               <div className="absolute right-0 top-0 w-64 h-64 bg-gold-light/15 blur-3xl rounded-full"></div>
-               <div className="relative z-10 max-w-xl">
-                 <p className="text-gold-dark uppercase tracking-widest text-xs font-bold mb-3">Custom Solutions</p>
-                 <h3 className="font-heading text-3xl font-bold mb-4 text-onyx">Need a specialized logistics plan?</h3>
-                 <p className="text-onyx/70 mb-8 font-medium">We tailor our capabilities to meet your exact supply chain requirements.</p>
-                 <Link href="#contact" className="inline-block px-6 py-3 gold-gradient-bg text-stark uppercase text-xs font-bold tracking-wider hover:shadow-lg hover:shadow-gold-light/20 transition-all">
-                   Talk to an Expert
-                 </Link>
-               </div>
-            </motion.div>
+            <FleetSlideshow />
           </motion.div>
         </div>
       </section>
