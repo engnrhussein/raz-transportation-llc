@@ -5,7 +5,7 @@ import { ArrowRight, ShieldCheck, Clock, Truck, Phone, Mail, MapPin } from "luci
 import Image from "next/image";
 import Link from "next/link";
 
-import LogoR from "@/components/LogoR";
+import LogoModified from "@/components/LogoModified";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -35,9 +35,9 @@ export default function Home() {
           className="flex items-center gap-3 cursor-pointer group"
           onClick={scrollToTop}
         >
-          {/* We use a container to crop out just the circular map mark from the full logo SVG */}
-          <div className="w-12 h-12 overflow-hidden flex items-center justify-start group-hover:scale-105 transition-transform">
-             <LogoR className="h-12 w-[auto] max-w-none origin-left" preserveAspectRatio="xMinYMin meet" />
+          {/* We use the modified logo provided by the user */}
+          <div className="flex items-center justify-start group-hover:scale-105 transition-transform">
+             <LogoModified className="h-12 w-auto max-w-none origin-left" />
           </div>
           <span className="font-heading font-bold text-xl tracking-wide hidden sm:block">RAZ TRANSPORTATION</span>
         </div>
