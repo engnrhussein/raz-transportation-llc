@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Privacy Policy | RAZ Transportation LLC",
-  description: "Privacy Policy for RAZ Transportation LLC.",
+  description: "Comprehensive Privacy Policy and Data Collection Practices for RAZ Transportation LLC.",
 };
 
 export default function PrivacyPolicy() {
@@ -18,101 +18,147 @@ export default function PrivacyPolicy() {
         </Link>
 
         <div className="mb-16">
-          <p className="text-gold-dark uppercase tracking-[0.2em] text-sm font-bold mb-4">Legal</p>
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">Privacy Policy</h1>
-          <p className="text-onyx/60 font-medium">Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+          <p className="text-gold-dark uppercase tracking-[0.2em] text-sm font-bold mb-4">Legal & Compliance</p>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">Comprehensive Privacy Policy</h1>
+          <p className="text-onyx/60 font-medium">Effective Date & Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
         </div>
 
         <div className="prose prose-lg prose-onyx max-w-none space-y-8 font-light text-onyx/80">
-          <p>
-            At <strong>RAZ Transportation LLC</strong> ("we," "us," or "our"), we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our logistics and freight services, or interact with us in any way.
-          </p>
+          
+          <div className="bg-onyx/5 p-6 border-l-4 border-gold-dark text-sm mb-12">
+            <p className="font-bold mb-2 text-onyx">Scope of this Policy</p>
+            <p>
+              This Privacy Policy applies to all users of the RAZ Transportation LLC website, our freight and logistics services, dispatch operations, and all related communications (collectively, the "Services"). By using our Services, you consent to the data practices described in this comprehensive policy.
+            </p>
+          </div>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">1. Information We Collect</h2>
-          <p>We may collect information about you in a variety of ways. The information we may collect includes:</p>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">1. Introduction and Definitions</h2>
+          <p>
+            RAZ Transportation LLC ("Company," "we," "us," or "our") is committed to safeguarding the privacy and security of the personal and corporate information entrusted to us by our clients, partners, drivers, and website visitors. As a professional logistics and transportation entity, we handle sensitive commercial data, regulatory compliance information, and personal identifiers.
+          </p>
+          <p>
+            For the purposes of this Privacy Policy:
+          </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Personal Data:</strong> Personally identifiable information, such as your name, shipping address, email address, and telephone number, that you voluntarily give to us when requesting a quote or booking freight services.</li>
-            <li><strong>Business Information:</strong> Company name, DOT numbers, billing details, and cargo specifications necessary to execute transportation contracts.</li>
-            <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access the website, such as your IP address, browser type, operating system, access times, and the pages you have viewed directly before and after accessing the site.</li>
+            <li><strong>"Personal Information"</strong> means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household.</li>
+            <li><strong>"User," "you," or "your"</strong> refers to website visitors, shippers, receivers, brokers, owner-operators, and any individual interacting with our Services.</li>
           </ul>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">2. How We Use Your Information</h2>
-          <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you to:</p>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">2. Categories of Information We Collect</h2>
+          <p>
+            To operate our logistics network efficiently and comply with federal and state transportation regulations (including FMCSA and DOT requirements), we collect various categories of information:
+          </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Provide, operate, and maintain our logistics and freight services.</li>
-            <li>Process and manage shipping quotes, dispatch orders, and invoices.</li>
-            <li>Improve, personalize, and expand our website operations.</li>
-            <li>Understand and analyze how you use our website.</li>
-            <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website and our services.</li>
-            <li>Send you emails regarding your shipments or account.</li>
-            <li>Find and prevent fraud.</li>
+            <li><strong>Identifiers & Contact Information:</strong> Real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol (IP) address, email address, account name, Social Security number (for 1099 contractors/drivers), driver's license number, or other similar identifiers.</li>
+            <li><strong>Commercial & Freight Information:</strong> Records of personal property, products or services purchased, shipping routes, cargo weight and dimensions, load boards accessed, facility addresses (pick-up and drop-off), gate codes, and purchasing or consuming histories or tendencies.</li>
+            <li><strong>Financial Data:</strong> Bank account numbers, credit card numbers, debit card numbers, factoring company details, and other financial information necessary for invoicing, payment processing, and broker credit checks.</li>
+            <li><strong>Geolocation Data:</strong> Physical location or movements, including GPS tracking data from Electronic Logging Devices (ELDs), mobile applications, or trailer trackers used to monitor the status and safety of in-transit freight.</li>
+            <li><strong>Internet & Network Activity:</strong> Browsing history, search history, and information regarding a consumer’s interaction with our website, application, or advertisement.</li>
+            <li><strong>Professional or Employment-Related Information:</strong> For owner-operators or carrier partners, we collect DOT numbers, MC numbers, insurance certificates, safety ratings, and driving records.</li>
           </ul>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">3. Disclosure of Your Information</h2>
-          <p>We may share information we have collected about you in certain situations. Your information may be disclosed as follows:</p>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">3. Sources of Information</h2>
+          <p>We obtain the categories of personal information listed above from the following categories of sources:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>By Law or to Protect Rights:</strong> If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.</li>
-            <li><strong>Third-Party Service Providers:</strong> We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance. <em>(Note: As stated below, this excludes mobile phone numbers and SMS consent data, which are never shared with third parties for their own marketing).</em></li>
-            <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+            <li><strong>Directly from you:</strong> For example, from forms you complete on our website, rate quotes you request, or contracts you enter into with us.</li>
+            <li><strong>Indirectly from you:</strong> For example, from observing your actions on our website through automated tracking technologies.</li>
+            <li><strong>From Third Parties:</strong> For example, from freight brokers, load boards (e.g., DAT, Truckstop), credit reporting agencies, insurance providers, and telematics/ELD service providers.</li>
           </ul>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">4. Cookies, Tracking, and Third-Party Marketing Tools</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">4. Business and Commercial Purposes for Data Use</h2>
+          <p>We use the information we collect for the following operational and commercial purposes:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Fulfilling Freight Contracts:</strong> To dispatch trucks, route freight, provide real-time tracking updates, manage layovers/lumpers, and generate accurate Bills of Lading (BOL) and Proof of Delivery (POD) documents.</li>
+            <li><strong>Regulatory Compliance:</strong> To comply with Department of Transportation (DOT), Federal Motor Carrier Safety Administration (FMCSA), and state-level transport regulations, including Hours of Service (HOS) auditing and safety compliance.</li>
+            <li><strong>Financial Processing:</strong> To process payments, manage invoicing, conduct broker credit checks, submit factoring claims, and prevent fraudulent transactions.</li>
+            <li><strong>Customer Service & Communications:</strong> To provide customer support, respond to inquiries, send operational alerts (e.g., weather delays, breakdown notifications), and manage claims for cargo damage or loss.</li>
+            <li><strong>Platform Optimization:</strong> To debug our website, analyze traffic patterns, and improve our digital infrastructure and user experience.</li>
+          </ul>
+
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">5. Cookies, Web Beacons, and Tracking Technologies</h2>
           <p>
-            We use cookies, web beacons, pixels, and similar tracking technologies to operate our website, analyze site traffic, and deliver targeted marketing campaigns. These tools automatically collect your Derivative Data to help us understand how you interact with our site and allow us to serve relevant advertisements to you on third-party platforms.
+            Our website utilizes cookies, web beacons, pixels, and similar tracking technologies to enhance user experience, operate the site securely, and deliver targeted marketing.
           </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Strictly Necessary Cookies:</strong> Required for the basic operation of our website, such as security protocols and network management.</li>
+            <li><strong>Analytical/Performance Cookies:</strong> Allow us to recognize and count the number of visitors and see how visitors move around our website. We may use third-party analytics services (such as Google Analytics) to aggregate this data.</li>
+            <li><strong>Targeting/Advertising Cookies:</strong> Record your visit to our website, the pages you have visited, and the links you have followed. We may share this general browsing data with trusted advertising networks to serve relevant logistics and freight marketing to you on third-party platforms.</li>
+          </ul>
           <p>
-            We may share your general browsing and interaction data with trusted third-party analytics and marketing partners (such as email service providers or advertising networks) to help us optimize our business. You can manage, control, or disable cookies through your web browser settings. Please note that disabling cookies may affect your ability to use certain features of our website.
+            <strong>Managing Cookies:</strong> You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">5. Text Messaging (SMS) Communications</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">6. Text Messaging (SMS) & A2P 10DLC Compliance</h2>
           <p>
-            By providing your mobile phone number, you consent to receive automated text messages from RAZ Transportation LLC regarding shipping quotes, dispatch updates, logistics coordination, and promotional offers. Message and data rates may apply. Message frequency varies.
+            Due to the time-sensitive nature of freight logistics, we heavily utilize text messaging for dispatch and operational updates. By providing your mobile phone number, you consent to receive automated and manual text messages from RAZ Transportation LLC regarding shipping quotes, dispatch updates, logistics coordination, and promotional offers. Message and data rates may apply. Message frequency varies.
           </p>
           <p>
-            You may opt out of receiving SMS messages at any time by replying <strong>"STOP"</strong> to any text message you receive from us. For assistance, reply <strong>"HELP"</strong>.
+            <strong>Opting Out:</strong> You may opt out of receiving SMS messages at any time by replying <strong>"STOP"</strong> to any text message you receive from us. For assistance, reply <strong>"HELP"</strong>.
           </p>
           <p>
-            <strong>SMS Data Sharing:</strong> We respect your privacy. Mobile information, including phone numbers and SMS opt-in consent data, will strictly not be shared with, sold to, or distributed to third parties or affiliates for their own marketing or promotional purposes. SMS data is only shared with our direct service providers (such as our text messaging platform) solely for the purpose of delivering our communications to you.
-          </p>
-
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">6. Data Retention</h2>
-          <p>
-            We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, or as required by law for tax, accounting, and regulatory purposes. Once we no longer need to process your personal data, we will either delete or anonymize it.
+            <strong>Strict SMS Data Privacy (Zero Third-Party Marketing Sharing):</strong> We rigorously respect your mobile privacy. Mobile information, including phone numbers and SMS opt-in consent data, <strong>will strictly not be shared with, sold to, or distributed to third parties, affiliates, or partners for their own marketing or promotional purposes.</strong> SMS data is only shared with our direct service providers (such as our enterprise text messaging platform) solely for the technical purpose of delivering our communications to you.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">7. Security of Your Information</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">7. Disclosure and Sharing of Personal Information</h2>
+          <p>We may disclose your Personal Information to a third party for a business purpose. When we disclose Personal Information for a business purpose, we enter a contract that describes the purpose and requires the recipient to both keep that personal information confidential and not use it for any purpose except performing the contract.</p>
+          <p>We share your Personal Information with the following categories of third parties:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Logistics Partners & Independent Contractors:</strong> Owner-operators, partner carriers, and lumpers required to execute the physical transportation of your freight.</li>
+            <li><strong>Service Providers:</strong> Cloud hosting providers, Transportation Management Systems (TMS), ELD providers, CRM platforms, and payment processors. <em>(Note: As explicitly stated in Section 6, this excludes mobile phone numbers and SMS consent data, which are never shared with third parties for their own marketing).</em></li>
+            <li><strong>Legal & Regulatory Authorities:</strong> State weigh stations, DOT inspectors, FMCSA auditors, law enforcement, and insurance adjusters in the event of an accident, claim, or regulatory audit.</li>
+            <li><strong>Business Transfers:</strong> In the event of a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of RAZ Transportation LLC's assets.</li>
+          </ul>
+
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">8. State-Specific Privacy Rights (CCPA, CPRA, VCDPA, CPA)</h2>
           <p>
-            We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+            Depending on your U.S. state of residence (e.g., California, Virginia, Colorado, Connecticut, Utah), you may have specific rights regarding your personal information. RAZ Transportation LLC is committed to honoring these rights nationwide where commercially feasible.
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Right to Know & Access:</strong> You have the right to request that we disclose certain information to you about our collection and use of your personal information over the past 12 months.</li>
+            <li><strong>Right to Deletion:</strong> You have the right to request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions (e.g., we cannot delete data required by the FMCSA for historical safety records, or data required for tax and accounting purposes).</li>
+            <li><strong>Right to Correction:</strong> You have the right to request that we correct inaccurate personal information that we maintain about you.</li>
+            <li><strong>Right to Opt-Out of the Sale or Sharing of Personal Data:</strong> <em>RAZ Transportation LLC does not sell your personal information for monetary value.</em> However, if the use of third-party advertising cookies constitutes "sharing" under certain state laws, you may opt out by utilizing global privacy controls or contacting us.</li>
+            <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising any of your consumer privacy rights (e.g., we will not deny you freight services or charge you different rates).</li>
+          </ul>
+          <p>To exercise your rights, please submit a verifiable consumer request to us using the contact information provided in Section 13. We must verify your identity before processing your request.</p>
+
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">9. Data Security Infrastructure</h2>
+          <p>
+            We have implemented rigorous administrative, technical, and physical security measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. This includes encryption of financial data, secure TMS access controls, and network firewalls. 
+          </p>
+          <p>
+            However, the transmission of information via the internet and cellular networks is not completely secure. While we do our best to protect your personal information, we cannot guarantee the absolute security of your personal information transmitted to our website or via our dispatch channels. Any transmission of personal information is at your own risk.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">8. User Rights</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">10. Data Retention</h2>
           <p>
-            Depending on your location, you may have certain rights regarding your personal information, including the right to request access to, correction of, or deletion of your data from our systems. If you would like to exercise any of these rights, please contact us using the information provided below.
+            We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy. In the logistics industry, regulatory bodies (like the DOT and IRS) mandate the retention of certain operational records (such as BOLs, HOS logs, and invoices) for a period of up to 3 to 7 years. Once we no longer have a legal or legitimate business need to process your personal data, we will securely delete or anonymize it.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">9. Do-Not-Track Features</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">11. Third-Party Links</h2>
           <p>
-            Most web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online.
+            Our website may contain links to third-party websites, plug-ins, load boards, and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we encourage you to read the privacy policy of every website you visit.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">10. Children's Privacy</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">12. Children's Privacy (COPPA)</h2>
           <p>
-            Our website and services are not intended for anyone under the age of 18. We do not knowingly collect personal identifiable information from minors. If we become aware that we have collected personal data from a child under 18, we will take steps to securely delete that information as quickly as possible.
+            Our Services are exclusively intended for commercial logistics professionals and adults over the age of 18. We do not knowingly collect personal identifiable information from children under 18. If you are under 18, do not use or provide any information on this website. If we learn we have collected or received personal information from a child under 18 without verification of parental consent, we will delete that information immediately.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">11. Changes to This Privacy Policy</h2>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">13. Changes to This Privacy Policy</h2>
           <p>
-            We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons. We will alert you about any changes by updating the "Last Updated" date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.
+            We reserve the right to amend this Privacy Policy at our discretion and at any time. When we make changes to this Privacy Policy, we will post the updated notice on the website and update the policy's "Last Updated" date. Your continued use of our website and Services following the posting of changes constitutes your acceptance of such changes.
           </p>
 
-          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">12. Contact Us</h2>
-          <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+          <h2 className="font-heading text-2xl font-bold text-onyx mt-12 mb-4">14. Contact Us & Data Protection Inquiries</h2>
+          <p>If you have any questions, comments, or wish to exercise your data privacy rights under this Privacy Policy, please contact our administrative team at:</p>
           <div className="bg-onyx/5 p-6 border border-onyx/10 rounded-sm mt-6">
             <p className="font-bold mb-1">RAZ Transportation LLC</p>
+            <p className="text-sm font-bold text-onyx/60 uppercase tracking-widest mb-3">Attn: Privacy & Operations</p>
             <p>2015 27TH ST SE, APT 105</p>
             <p>ST CLOUD, MN 56304</p>
-            <p className="mt-4"><strong>Email:</strong> razdispatch1@raztransportationllc.com</p>
-            <p><strong>Phone:</strong> (218) 313-1439</p>
+            <p className="mt-4"><strong>Email:</strong> <a href="mailto:razdispatch1@raztransportationllc.com" className="text-gold-dark hover:underline">razdispatch1@raztransportationllc.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:218-313-1439" className="text-gold-dark hover:underline">(218) 313-1439</a></p>
           </div>
         </div>
       </article>
