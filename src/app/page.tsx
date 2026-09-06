@@ -5,6 +5,8 @@ import { ArrowRight, ShieldCheck, Clock, Truck, Phone, Mail, MapPin } from "luci
 import Image from "next/image";
 import Link from "next/link";
 
+import LogoR from "@/components/LogoR";
+
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -21,12 +23,22 @@ const staggerContainer: Variants = {
 };
 
 export default function Home() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <main className="min-h-screen bg-stark text-onyx font-sans overflow-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-stark/80 backdrop-blur-md border-b border-onyx/5 px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Image src="/logo.svg" alt="RAZ Transportation Logo" width={48} height={48} className="w-12 h-12" />
+        <div 
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={scrollToTop}
+        >
+          {/* We use a container to crop out just the circular map mark from the full logo SVG */}
+          <div className="w-12 h-12 overflow-hidden flex items-center justify-start group-hover:scale-105 transition-transform">
+             <LogoR className="h-12 w-[auto] max-w-none origin-left" preserveAspectRatio="xMinYMin meet" />
+          </div>
           <span className="font-heading font-bold text-xl tracking-wide hidden sm:block">RAZ TRANSPORTATION</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-onyx/80">
@@ -43,8 +55,8 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center pt-20 px-6 bg-[#FAFAFA]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* Subtle light background */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-stark/80 to-stark z-10"></div>
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-[0.07] grayscale"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/80 to-stark z-10"></div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 grayscale"></div>
         </div>
         
         <motion.div 
@@ -230,7 +242,7 @@ export default function Home() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-gold-light shrink-0" />
-                dispatch@raztransportation.com
+                razdispatch1@raztransportationllc.com
               </li>
             </ul>
           </div>
