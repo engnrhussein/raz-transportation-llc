@@ -2,38 +2,21 @@ import React from 'react';
 
 export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    
 <svg
    version="1.1"
    viewBox="0 0 2224 1920"
    width="100%"
    height="100%"
    id="svg54"
-   sodipodi:docname="logo_modified.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   sodipodiDocname="logo_modified.svg"
+   inkscapeVersion="1.4.4 (dcaf3e7, 2026-05-05)"
+   
+   
    xmlnsXlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg" {...props}>
-  <sodipodi:namedview
-     id="namedview54"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.29646925"
-     inkscape:cx="905.65885"
-     inkscape:cy="865.18248"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg54" />
+    {...props}>
+  
   <defs
      id="defs24">
     <linearGradient
@@ -187,8 +170,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
          id="stop24" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-swoosh"
+       inkscapeCollect="always"
+       xlinkHref="#gold-swoosh"
        id="linearGradient54"
        x1="3773.2841"
        y1="7500.3831"
@@ -197,8 +180,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
        gradientTransform="scale(1.2885381,0.77607327)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-swoosh"
+       inkscapeCollect="always"
+       xlinkHref="#gold-swoosh"
        id="linearGradient55"
        x1="4109.4265"
        y1="7848.565"
@@ -207,8 +190,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
        gradientTransform="scale(0.98645539,1.0137306)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-swoosh"
+       inkscapeCollect="always"
+       xlinkHref="#gold-swoosh"
        id="linearGradient56"
        x1="7692.6958"
        y1="5446.5273"
@@ -217,8 +200,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
        gradientTransform="scale(1.2135002,0.82406247)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-llc"
+       inkscapeCollect="always"
+       xlinkHref="#gold-llc"
        id="linearGradient57"
        x1="10657.424"
        y1="1283.9363"
@@ -227,8 +210,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
        gradientTransform="scale(0.87901706,1.1376344)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-llc"
+       inkscapeCollect="always"
+       xlinkHref="#gold-llc"
        id="linearGradient58"
        x1="11947.408"
        y1="1274.2847"
@@ -237,8 +220,8 @@ export default function LogoModified(props: React.SVGProps<SVGSVGElement>) {
        gradientTransform="scale(0.87307304,1.1453795)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#gold-llc"
+       inkscapeCollect="always"
+       xlinkHref="#gold-llc"
        id="linearGradient59"
        x1="12316.713"
        y1="1361.4258"
