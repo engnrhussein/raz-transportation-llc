@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="scroll-mt-24 md:scroll-mt-28 py-16 lg:py-20 px-6 bg-white relative border-t border-onyx/5">
+      <section id="about" className="scroll-mt-8 md:scroll-mt-10 py-16 lg:py-20 px-6 bg-white relative border-t border-onyx/5">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="text-center mb-12 lg:mb-16"
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-16 lg:py-20 px-6 bg-stark relative">
+      <section id="services" className="scroll-mt-8 md:scroll-mt-10 py-16 lg:py-20 px-6 bg-stark relative">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8"
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Footer - Keeping it dark for strong contrast and premium grounding */}
-      <footer id="contact" className="scroll-mt-24 md:scroll-mt-28 bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
+      <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
