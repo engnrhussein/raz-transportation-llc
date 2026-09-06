@@ -95,17 +95,15 @@ export default function Home() {
                 desc: "From advanced driver training to rigorous vehicle maintenance, your cargo is protected at every mile."
               },
               {
-                icon: <MapPin size={40} className="text-gold-dark" />,
-                title: "Real-Time Tracking",
-                desc: "Total visibility from origin to destination. State-of-the-art ELD tracking keeps you informed 24/7."
+                icon: <Truck size={40} className="text-gold-dark" />,
+                title: "Uncompromising Reliability",
+                desc: "We deliver on our promises. No excuses, just transparent tracking and dependable capacity when you need it most."
               }
             ].map((feature, i) => (
-              <motion.div key={i} variants={fadeInUp} className="text-center group">
-                <div className="w-20 h-20 mx-auto bg-stark rounded-full flex items-center justify-center mb-6 shadow-md border border-onyx/5 group-hover:scale-110 transition-transform duration-300">
-                  {feature.icon}
-                </div>
-                <h3 className="font-heading text-xl font-bold mb-3 text-onyx">{feature.title}</h3>
-                <p className="text-onyx/70 font-medium leading-relaxed">{feature.desc}</p>
+              <motion.div key={i} variants={fadeInUp} className="p-8 border border-onyx/10 bg-stark hover:bg-white hover:shadow-xl hover:shadow-black/5 transition-all group">
+                <div className="mb-6 transform group-hover:scale-110 transition-transform origin-left">{feature.icon}</div>
+                <h3 className="font-heading text-2xl font-bold mb-4 text-onyx">{feature.title}</h3>
+                <p className="text-onyx/70 leading-relaxed font-medium">{feature.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -145,9 +143,13 @@ export default function Home() {
 
       {/* Footer - Keeping it dark for strong contrast and premium grounding */}
       <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent"></div>
+        {/* Subtle Industrial Asphalt Texture */}
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-[0.07] mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent z-0"></div>
         
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent z-10"></div>
+        
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
           <div className="lg:col-span-1">
             <Image src="/logo.svg" alt="RAZ Transportation Logo" width={64} height={64} className="w-16 h-16 mb-6" />
             <p className="text-stark/60 font-light mb-6 text-sm leading-relaxed">
