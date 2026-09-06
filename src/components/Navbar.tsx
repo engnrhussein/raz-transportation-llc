@@ -52,9 +52,9 @@ export default function Navbar() {
             onClick={scrollToTop}
           >
             <div className="flex items-center justify-start group-hover:scale-105 transition-transform">
-               <LogoModified className="h-10 md:h-12 w-auto max-w-none origin-left" />
+               <LogoModified className="h-10 md:h-12 w-auto max-w-none origin-left shrink-0" />
             </div>
-            <span className="font-heading font-bold text-lg md:text-xl tracking-wide hidden sm:block text-onyx">RAZ TRANSPORTATION</span>
+            <span className="font-heading font-bold text-sm sm:text-lg md:text-xl tracking-tight sm:tracking-wide text-onyx truncate">RAZ TRANSPORTATION LLC</span>
           </div>
 
           {/* Desktop Links */}
