@@ -266,7 +266,7 @@ export default function Home() {
           <p>&copy; {new Date().getFullYear()} RAZ Transportation LLC. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-gold-light transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-gold-light transition-colors">Terms of Service</Link>
+            <Link href="/terms" className="hover:text-gold-light transition-colors">Terms of Service</Link>
           </div>
         </div>
       </footer>
