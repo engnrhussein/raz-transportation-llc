@@ -44,7 +44,7 @@ export default function Navbar() {
         )}
       </AnimatePresence>
 
-      <nav className="fixed top-0 w-full z-50 bg-stark/80 backdrop-blur-xl border-b border-onyx/5 px-6 py-4">
+      <nav className="fixed top-0 w-full z-50 bg-stark/80 backdrop-blur-xl border-b border-onyx/5 px-4 lg:px-6 py-3 lg:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo Section */}
           <div 
@@ -54,17 +54,20 @@ export default function Navbar() {
             <div className="flex items-center justify-start group-hover:scale-105 transition-transform">
                <LogoModified className="h-10 md:h-12 w-auto max-w-none origin-left shrink-0" />
             </div>
-            <span className="font-heading font-bold text-sm sm:text-lg md:text-xl tracking-tight sm:tracking-wide text-onyx truncate">RAZ TRANSPORTATION LLC</span>
+            <div className="font-heading font-bold text-[14px] sm:text-base md:text-lg lg:text-xl tracking-tight text-onyx leading-none flex flex-col xl:flex-row xl:gap-1.5 justify-center">
+              <span>RAZ</span>
+              <span>TRANSPORTATION LLC</span>
+            </div>
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-onyx/80">
+          <div className="hidden md:flex items-center gap-4 lg:gap-8 text-sm uppercase tracking-widest text-onyx/80">
             {navLinks.map((link) => (
               <Link key={link.name} href={link.href} className="hover:text-gold-dark transition-colors font-medium">
                 {link.name}
               </Link>
             ))}
-            <Link href={getHref("#contact")} className="px-5 py-2 gold-gradient-bg rounded-none text-sm uppercase tracking-widest text-stark font-bold hover:shadow-lg hover:shadow-gold-light/20 transition-all">
+            <Link href={getHref("#contact")} className="px-4 py-2 lg:px-5 lg:py-2 gold-gradient-bg rounded-none text-[12px] lg:text-sm uppercase tracking-widest text-stark font-bold hover:shadow-lg hover:shadow-gold-light/20 transition-all">
               Get a Quote
             </Link>
           </div>
