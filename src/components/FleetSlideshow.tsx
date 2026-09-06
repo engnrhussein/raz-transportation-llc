@@ -6,17 +6,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const fleetImages = [
   {
-    src: "/trucks1.jfif",
+    src: "/trucks1.jpg",
     title: "Heavy-Duty Haulers",
     desc: "Our late-model, meticulously maintained power units ensure maximum uptime and reliability on the road."
   },
   {
-    src: "/trucks2.jfif",
+    src: "/trucks2.jpg",
     title: "Versatile Trailing Equipment",
     desc: "From standard dry vans to specialized flatbeds, we have the diverse trailing equipment to handle any cargo."
   },
   {
-    src: "/trucks3.jfif",
+    src: "/trucks3.jpg",
     title: "Nationwide Capacity",
     desc: "This is just a glimpse of our network. Our expansive, dynamic fleet is ready to deploy across all 48 lower states."
   }
@@ -58,10 +58,10 @@ export default function FleetSlideshow() {
           {/* We use background-image to make it difficult to drag/right-click "Open Image" */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('${fleetImages[currentIndex].src}')`, opacity: 0.8 }}
+            style={{ backgroundImage: `url('${fleetImages[currentIndex].src}')`, opacity: 0.9 }}
           />
           {/* Gradient Overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/20 to-transparent opacity-75" />
         </motion.div>
       </AnimatePresence>
 

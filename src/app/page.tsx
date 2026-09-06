@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center pt-20 px-6 bg-[#FAFAFA]">
+      <section className="relative flex items-center justify-center pt-40 pb-24 md:pt-48 md:pb-32 px-6 bg-[#FAFAFA]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* Subtle light background */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/80 to-stark z-10"></div>
@@ -44,7 +44,7 @@ export default function Home() {
           <motion.p variants={fadeInUp} className="text-gold-dark uppercase tracking-[0.3em] text-sm md:text-base font-bold mb-6">
             The RAZ Standard
           </motion.p>
-          <motion.h1 variants={fadeInUp} className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 text-onyx">
+          <motion.h1 variants={fadeInUp} className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 text-onyx">
             Driving the <br className="hidden md:block" />
             <span className="gold-gradient-text">Future of Freight</span>
           </motion.h1>
@@ -72,7 +72,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">The RAZ Standard</h2>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-onyx">The RAZ Standard</h2>
             <div className="h-1 w-24 bg-gradient-to-r from-gold-light to-gold-dark mx-auto"></div>
           </motion.div>
 
@@ -122,7 +122,7 @@ export default function Home() {
           >
             <div>
               <p className="text-gold-dark uppercase tracking-widest text-sm mb-4 font-bold">Our Fleet</p>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-onyx">Uncompromising Capacity</h2>
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-onyx">Uncompromising Capacity</h2>
             </div>
             <Link href="#contact" className="text-sm uppercase tracking-widest text-onyx hover:text-gold-dark transition-colors flex items-center gap-2 pb-2 border-b border-onyx/20 hover:border-gold-dark font-bold">
               Dispatch a Truck <ArrowRight size={16} />

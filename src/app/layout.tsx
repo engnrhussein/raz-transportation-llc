@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${syne.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-stark text-onyx bg-[#FAFAFA]">
+      <body className="min-h-full flex flex-col bg-stark text-onyx bg-[#FAFAFA] break-words">
         {children}
       </body>
     </html>
