@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 lg:py-20 px-6 bg-white relative border-t border-onyx/5">
+      <section id="about" className="scroll-mt-24 md:scroll-mt-28 py-16 lg:py-20 px-6 bg-white relative border-t border-onyx/5">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="text-center mb-12 lg:mb-16"
@@ -95,15 +95,17 @@ export default function Home() {
                 desc: "From advanced driver training to rigorous vehicle maintenance, your cargo is protected at every mile."
               },
               {
-                icon: <Truck size={40} className="text-gold-dark" />,
-                title: "Uncompromising Reliability",
-                desc: "We deliver on our promises. No excuses, just transparent tracking and dependable capacity when you need it most."
+                icon: <MapPin size={40} className="text-gold-dark" />,
+                title: "Real-Time Tracking",
+                desc: "Total visibility from origin to destination. State-of-the-art ELD tracking keeps you informed 24/7."
               }
             ].map((feature, i) => (
-              <motion.div key={i} variants={fadeInUp} className="p-8 border border-onyx/10 bg-stark hover:bg-white hover:shadow-xl hover:shadow-black/5 transition-all group">
-                <div className="mb-6 transform group-hover:scale-110 transition-transform origin-left">{feature.icon}</div>
-                <h3 className="font-heading text-2xl font-bold mb-4 text-onyx">{feature.title}</h3>
-                <p className="text-onyx/70 leading-relaxed font-medium">{feature.desc}</p>
+              <motion.div key={i} variants={fadeInUp} className="text-center group">
+                <div className="w-20 h-20 mx-auto bg-stark rounded-full flex items-center justify-center mb-6 shadow-md border border-onyx/5 group-hover:scale-110 transition-transform duration-300">
+                  {feature.icon}
+                </div>
+                <h3 className="font-heading text-xl font-bold mb-3 text-onyx">{feature.title}</h3>
+                <p className="text-onyx/70 font-medium leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -111,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 lg:py-20 px-6 bg-stark relative">
+      <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-16 lg:py-20 px-6 bg-stark relative">
         <div className="max-w-7xl mx-auto">
           <motion.div 
             className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8"
@@ -122,7 +124,7 @@ export default function Home() {
           >
             <div>
               <p className="text-gold-dark uppercase tracking-widest text-sm mb-4 font-bold">Our Fleet</p>
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-onyx">Uncompromising Capacity</h2>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-onyx">Uncompromising Capacity</h2>
             </div>
             <Link href="#contact" className="text-sm uppercase tracking-widest text-onyx hover:text-gold-dark transition-colors flex items-center gap-2 pb-2 border-b border-onyx/20 hover:border-gold-dark font-bold">
               Dispatch a Truck <ArrowRight size={16} />
@@ -142,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Footer - Keeping it dark for strong contrast and premium grounding */}
-      <footer id="contact" className="bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
+      <footer id="contact" className="scroll-mt-24 md:scroll-mt-28 bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
