@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${syne.variable} h-full antialiased dark`}
+      className={`${inter.variable} ${syne.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-onyx text-stark bg-[#0A0A0A]">
+      <body className="min-h-full flex flex-col bg-stark text-onyx bg-[#FAFAFA]">
         {children}
       </body>
     </html>
