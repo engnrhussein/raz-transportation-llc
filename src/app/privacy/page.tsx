@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
 
         <div className="mb-16">
           <p className="text-gold-dark uppercase tracking-[0.2em] text-sm font-bold mb-4">Legal & Compliance</p>
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">Comprehensive Privacy Policy</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-onyx">Privacy Policy</h1>
           <p className="text-onyx/60 font-medium">Effective Date & Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
         </div>
 
