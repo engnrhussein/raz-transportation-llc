@@ -87,6 +87,23 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              
+              {/* Mobile-only Legal Links */}
+              <Link 
+                href="/privacy" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-base uppercase tracking-widest text-onyx/80 hover:text-gold-dark transition-colors font-medium p-2"
+              >
+                Privacy Policy
+              </Link>
+              <Link 
+                href="/terms" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-base uppercase tracking-widest text-onyx/80 hover:text-gold-dark transition-colors font-medium p-2"
+              >
+                Terms of Service
+              </Link>
+
               <Link 
                 href={getHref("#contact")} 
                 onClick={() => setIsMobileMenuOpen(false)}
