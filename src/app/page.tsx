@@ -32,7 +32,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* Subtle light background */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/80 to-stark z-10"></div>
-          <div className="absolute inset-0 bg-[url('/trucks2.jpg')] bg-cover bg-center opacity-40 grayscale"></div>
+          <div className="absolute inset-0 bg-[url('/trucks3.jpg')] bg-cover bg-center opacity-40 grayscale"></div>
         </div>
         
         <motion.div 
