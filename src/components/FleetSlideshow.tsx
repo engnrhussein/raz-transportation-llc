@@ -17,6 +17,26 @@ const fleetImages = [
   },
   {
     src: "/trucks3.jpg",
+    title: "Desert Express",
+    desc: "Running scenic desert routes to deliver your freight coast-to-coast."
+  },
+  {
+    src: "/trucks4.jpg",
+    title: "Industrial Loading docks",
+    desc: "Seamless integration with bustling distribution centers and logistics hubs."
+  },
+  {
+    src: "/trucks5.jpg",
+    title: "Extreme Weather Capability",
+    desc: "Navigating snowy mountain passes safely to ensure your supply chain never stops."
+  },
+  {
+    src: "/trucks6.jpg",
+    title: "24/7 Night Operations",
+    desc: "Operating around the clock on major city interstates to hit critical delivery windows."
+  },
+  {
+    src: "/trucks7.jpg",
     title: "Nationwide Capacity",
     desc: "This is just a glimpse of our network. Our expansive, dynamic fleet is ready to deploy across all 48 lower states."
   }
