@@ -49,7 +49,7 @@ export default function Home() {
             <span className="gold-gradient-text">Future of Freight</span>
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-onyx/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium">
-            Premium logistics and freight solutions engineered for speed, safety, and uncompromising reliability. 
+            Dedicated freight and logistics services built to keep your supply chain moving safely and on schedule.
           </motion.p>
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link href="#contact" className="w-full sm:w-auto px-8 py-4 gold-gradient-bg rounded-none uppercase tracking-widest text-sm flex items-center justify-center gap-2 text-stark hover:shadow-xl hover:shadow-gold-light/20 transition-all">
@@ -151,13 +151,13 @@ export default function Home() {
         
         {/* Centered Large Logo */}
         <div className="relative z-10 flex flex-col items-center justify-center pt-8 pb-12">
-           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={300} height={300} className="w-48 h-auto md:w-64 max-w-full hover:scale-105 transition-transform duration-300" priority />
+           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[480px] md:w-[640px] max-w-full hover:scale-105 transition-transform duration-300" priority />
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
           <div className="lg:col-span-1">
             <p className="text-stark/60 font-light mb-6 text-sm leading-relaxed">
-              Premium logistics and freight solutions engineered for speed, safety, and uncompromising reliability.
+              Dedicated freight and logistics services built to keep your supply chain moving safely and on schedule.
             </p>
             <div className="inline-block border border-gold-light/30 px-4 py-2 text-xs uppercase tracking-widest text-gold-light font-medium">
               U.S DOT No. 3208292
