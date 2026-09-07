@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Footer - Keeping it dark for strong contrast and premium grounding */}
-      <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-slate-900 pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
+      <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-slate-900 pt-6 md:pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
         {/* Subtle Industrial Asphalt Texture */}
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-[0.07] mix-blend-overlay"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-0"></div>
@@ -150,11 +150,11 @@ export default function Home() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent z-10"></div>
         
         {/* Centered Large Logo */}
-        <div className="relative z-10 flex flex-col items-center justify-center pt-8 pb-12">
-           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[480px] md:w-[640px] max-w-full hover:scale-105 transition-transform duration-300" priority />
+        <div className="relative z-10 flex flex-col items-center justify-center pt-2 md:pt-8 pb-6 md:pb-12">
+           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[384px] md:w-[512px] max-w-full hover:scale-105 transition-transform duration-300" priority />
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mb-8 md:mb-16 relative z-10">
           <div className="lg:col-span-1">
             <p className="text-stark/60 font-light mb-6 text-sm leading-relaxed">
               Dedicated freight and logistics services built to keep your supply chain moving safely and on schedule.
