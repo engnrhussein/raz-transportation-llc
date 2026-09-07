@@ -143,10 +143,10 @@ export default function Home() {
       </section>
 
       {/* Footer - Keeping it dark for strong contrast and premium grounding */}
-      <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-onyx pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
+      <footer id="contact" className="scroll-mt-8 md:scroll-mt-10 bg-slate-900 pt-16 pb-8 px-6 border-t border-white/10 relative overflow-hidden text-stark">
         {/* Subtle Industrial Asphalt Texture */}
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-[0.07] mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-0"></div>
         
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent z-10"></div>
         
