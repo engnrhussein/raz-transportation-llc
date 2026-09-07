@@ -151,7 +151,9 @@ export default function Home() {
         
         {/* Centered Large Logo */}
         <div className="relative z-10 flex flex-col items-center justify-center pt-2 md:pt-8 pb-6 md:pb-12">
-           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[384px] md:w-[512px] max-w-full hover:scale-105 transition-transform duration-300" priority />
+           {/* Luminescent background glow under the logo */}
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold-light/25 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[384px] md:w-[512px] max-w-full hover:scale-105 transition-transform duration-300 relative z-10" priority />
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mb-8 md:mb-16 relative z-10">
