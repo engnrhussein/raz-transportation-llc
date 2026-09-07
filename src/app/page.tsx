@@ -208,8 +208,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs text-stark/60 font-medium relative z-10">
           <p>&copy; {new Date().getFullYear()} RAZ Transportation LLC. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="hover:text-gold-light transition-colors relative z-10">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-gold-light transition-colors relative z-10">Terms of Service</Link>
+            <a href="https://docs.raztransportationllc.com/privacy" className="hover:text-gold-light transition-colors relative z-10" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="https://docs.raztransportationllc.com/terms" className="hover:text-gold-light transition-colors relative z-10" target="_blank" rel="noopener noreferrer">Terms of Service</a>
           </div>
         </div>
       </footer>
