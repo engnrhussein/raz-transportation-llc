@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import FleetSlideshow from "@/components/FleetSlideshow";
-import LogoModified from "@/components/LogoModified";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -152,7 +151,7 @@ export default function Home() {
         
         {/* Centered Large Logo */}
         <div className="relative z-10 flex flex-col items-center justify-center pt-8 pb-12">
-           <LogoModified className="w-48 h-auto md:w-64 max-w-full text-stark group-hover:scale-105 transition-transform" />
+           <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={300} height={300} className="w-48 h-auto md:w-64 max-w-full hover:scale-105 transition-transform duration-300" priority />
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
