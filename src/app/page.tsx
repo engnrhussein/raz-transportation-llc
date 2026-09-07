@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import FleetSlideshow from "@/components/FleetSlideshow";
+import LogoModified from "@/components/LogoModified";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -149,9 +150,13 @@ export default function Home() {
         
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-light/50 to-transparent z-10"></div>
         
+        {/* Centered Large Logo */}
+        <div className="relative z-10 flex flex-col items-center justify-center pt-8 pb-12">
+           <LogoModified className="w-48 h-auto md:w-64 max-w-full text-stark group-hover:scale-105 transition-transform" />
+        </div>
+
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
           <div className="lg:col-span-1">
-            <Image src="/logo.svg" alt="RAZ Transportation Logo" width={64} height={64} className="w-16 h-16 mb-6" />
             <p className="text-stark/60 font-light mb-6 text-sm leading-relaxed">
               Premium logistics and freight solutions engineered for speed, safety, and uncompromising reliability.
             </p>
