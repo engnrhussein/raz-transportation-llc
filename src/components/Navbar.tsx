@@ -45,7 +45,7 @@ export default function Navbar() {
       </AnimatePresence>
 
       <nav className="fixed top-0 w-full z-50 bg-stark/80 backdrop-blur-xl border-b border-onyx/5 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px] w-full mx-auto flex items-center justify-between">
           {/* Logo Section */}
           <div 
             className="flex items-center gap-3 cursor-pointer group"

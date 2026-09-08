@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         
         <motion.div 
-          className="relative z-10 max-w-5xl mx-auto text-center"
+          className="relative z-10 max-w-5xl xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto text-center"
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="scroll-mt-8 md:scroll-mt-10 py-16 lg:py-20 px-6 bg-white relative border-t border-onyx/5">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
           <motion.div 
             className="text-center mb-12 lg:mb-16"
             initial="hidden"
@@ -112,7 +112,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="scroll-mt-8 md:scroll-mt-10 py-16 lg:py-20 px-6 bg-stark relative">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
           <motion.div 
             className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8"
             initial="hidden"
@@ -156,7 +156,7 @@ export default function Home() {
            <Image src="/logo.svg" alt="RAZ Transportation LLC Full Logo" width={800} height={800} className="w-[384px] md:w-[512px] max-w-full hover:scale-105 transition-transform duration-300 relative z-10" priority />
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mb-8 md:mb-16 relative z-10">
+        <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mb-8 md:mb-16 relative z-10">
           <div className="lg:col-span-1">
             <p className="text-stark/60 font-light mb-6 text-sm leading-relaxed">
               Dedicated freight and logistics services built to keep your supply chain moving safely and on schedule.
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs text-stark/60 font-medium relative z-10">
+        <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs text-stark/60 font-medium relative z-10">
           <p>&copy; {new Date().getFullYear()} RAZ Transportation LLC. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="https://docs.raztransportationllc.com/privacy" className="hover:text-gold-light transition-colors relative z-10" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
